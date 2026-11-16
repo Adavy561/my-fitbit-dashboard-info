@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy information for My Fitbit Dashboard and its Google Health data use.">
+  <title>Privacy Policy · My Fitbit Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">My Fitbit Dashboard</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a aria-current="page" href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main id="main" class="document-page">
+    <header class="document-heading">
+      <p class="eyebrow">YOUR DATA</p>
+      <h1>Privacy Policy</h1>
+      <p class="lead">How My Fitbit Dashboard uses Google Health data for its single owner.</p>
+      <p class="updated">Effective November 16, 2026</p>
+    </header>
+
+    <section class="policy-section">
+      <h2>Who this app is for</h2>
+      <p>My Fitbit Dashboard is a personal, self-hosted app maintained for one owner’s use. It is not a public service and does not offer public accounts or sign-up.</p>
+    </section>
+
+    <section class="policy-section">
+      <h2>Public information pages</h2>
+      <p>When these pages are served through GitHub Pages, GitHub may process ordinary visitor request information under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. These pages do not receive Fitbit or Google Health readings or the app’s OAuth credentials.</p>
+    </section>
+
+    <section class="policy-section">
+      <h2>Google Health data it accesses</h2>
+      <p>After the account owner authorizes access, the app uses only these read-only Google Health scopes:</p>
+      <ul>
+        <li>Sleep</li>
+        <li>Health metrics and measurements</li>
+        <li>Activity and fitness</li>
+      </ul>
+      <p>The companion reads sleep records to show the latest non-nap sleep duration and a seven-day average; daily heart-rate variability, respiratory rate, and resting heart rate; and running exercise records used to calculate current-week distance and a consecutive running-day streak. Values that Google Health does not return are omitted.</p>
+      <p>The app does not ask the owner to give it their Google password. Google handles account sign-in and the authorization flow.</p>
+    </section>
+
+    <section class="policy-section">
+      <h2>How the data is used and shared</h2>
+      <p>The app uses the authorized data only to calculate and display these summaries in the owner’s authenticated local dashboard and, if configured, on the owner’s CYD display. It does not sell the Google Health data or use it for advertising, analytics, profiling, model training, or unrelated purposes.</p>
+      <p>Google receives the OAuth authorization, token refresh, and Google Health API requests needed to provide the connection. Google’s handling of those requests is governed by Google’s own terms and privacy information. The app does not send health summaries to an advertising or analytics service.</p>
+    </section>
+
+    <section class="policy-section">
+      <h2>Storage and retention</h2>
+      <p>The OAuth credential, including refresh-token information, is kept in a local JSON file on the owner’s authorization computer and is copied to the owner’s self-hosted companion so it can poll Google Health. The companion updates this file when it refreshes an access token. The application does not encrypt this file; protection depends on access controls on the owner’s devices.</p>
+      <p>Health readings are reduced to the displayed summaries and kept in the running service’s memory. This integration does not write a persistent health-history file. Dashboard responses are served without HTTP caching. If configured, only health values bound to widgets are sent to the CYD over the authenticated local telemetry connection.</p>
+    </section>
+
+    <section class="policy-section">
+      <h2>Local network and security</h2>
+      <p>The companion is intended for a trusted private network or private VPN. Its local dashboard uses HTTP by default; a private VPN or other secure tunnel is needed to protect network traffic from observers on the route. Keep the companion private and restrict access to the credential file.</p>
+    </section>
+
+    <section class="policy-section">
+      <h2>Revoke access or remove data</h2>
+      <p>The owner can revoke the app’s access in Google Account settings. Removing the local Google Health token file and stopping the companion prevents further polling. Because this integration does not keep a persistent health history, there is no stored history file to delete.</p>
+    </section>
+
+    <section class="policy-section contact-section">
+      <h2>Questions</h2>
+      <p><a href="https://github.com/Adavy561/my-fitbit-dashboard-info/issues">Contact the maintainer through GitHub Issues</a>. GitHub issues may be public. Do not post health information, account details, OAuth codes, tokens, or other sensitive information.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>My Fitbit Dashboard is an independent personal project, not an official Google or Fitbit product.</p>
+    <p><a href="index.html">Home</a> · <a href="terms.html">Terms of use</a></p>
+    <p class="updated">Updated November 16, 2026</p>
+  </footer>
+</body>
+</html>
